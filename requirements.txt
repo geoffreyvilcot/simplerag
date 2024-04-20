@@ -1,0 +1,6 @@
+tqdm
+flask
+gradio
+qdrant-client
+sentence_transformers
+sentencepiece

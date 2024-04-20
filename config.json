@@ -1,0 +1,19 @@
+{
+  "ingest_files_dir": "docs",
+  "vector_db_file": "vector_db/rag.db",
+  "prompt_template": "prompt_default.txt",
+  "external_llama_cpp_url" : "http://127.0.0.1:8080",
+  "embd_device": "cpu",
+
+  "ingest_max_tokens" : 150,
+  "listen_bind": "127.0.0.1",
+  "listen_port": 49283,
+
+  "use_rag": true,
+  "use_qdrant" : true,
+  "qdrant_local" : true,
+  "qdrant_host" : "http://127.0.0.1",
+  "qdrant_port" : "6333",
+  "qdrant_collection" : "rag",
+  "ingest_limit_files": 50000
+}

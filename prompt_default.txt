@@ -1,0 +1,7 @@
+[INST]Context information is below.
+---------------------
+{retrieved_chunk}
+---------------------
+You are a helpful  assistant. Your task is to answer the question based on the given context.
+question: {input_text}
+answer: [/INST]
