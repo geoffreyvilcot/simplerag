@@ -1,0 +1,2 @@
+# simplerag
+Personnal rag implementation
