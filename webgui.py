@@ -63,10 +63,6 @@ def query(Inputs, k_vector, max_tokens, temperature, seed):
     print(response_text)
     print("="*120)
 
-    with open("log.txt", "a") as flog :
-        flog.write(str(datetime.datetime.now())+"\n")
-        flog.write(f"{prompt}\n=>\n{response_text}\n=================================================================\n")
-
     return references, response_text, f"Elapsed time {end_t -start_t:0.2f}s / {idx} tokens / {idx/(end_t -start_t):0.2f} tokens / sec", prompt
 
 
