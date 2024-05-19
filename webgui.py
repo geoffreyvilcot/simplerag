@@ -56,7 +56,8 @@ def query(Inputs, k_vector, max_tokens, temperature, seed):
         response_text +=e
         end_t = time.time()
         idx +=1
-        yield references, response_text, f"Elapsed time {end_t -start_t:0.2f}s / Prompt eval {prompt_duration:0.2f} sec / {idx} tokens / {idx/(end_t -start_t):0.2f} tokens / sec", prompt
+        stats = f"Elapsed time {end_t -start_t:0.2f}s / Prompt eval {prompt_duration:0.2f} sec / {idx} tokens / {idx/(end_t -start_t):0.2f} tokens / sec"
+        yield references, response_text, stats, prompt
 
     end_t = time.time()
 
